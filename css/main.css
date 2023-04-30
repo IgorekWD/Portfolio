@@ -1,9 +1,24 @@
+* {
+   box-sizing: border-box;
+}
+
 body {
    margin: 0;
    padding: 0;
    font-family: 'Montserrat', sans-serif;
 }
 
+.container {
+   max-width: 1110px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.none {
+   display: none !important;
+}
+
+/* BLOCK HEADER */
 .header {
    position: relative; /* Родитель позиционирование для .header-arrow */
 
@@ -52,4 +67,59 @@ body {
    bottom: 30px;
    left: 50%;
    transform: translate(-50%, 0px);
+}
+
+/* BLOCK PORTFOLIO */
+.portfolio {
+   padding-top: 80px;
+   padding-bottom: 115px;
+}
+
+.portfolio-header {
+   margin: 0;
+   margin-bottom: 70px;
+   font-weight: 700;
+   font-size: 46px;
+   line-height: 130%;
+   text-align: center;
+   color: #000;
+}
+
+.portfolio-cards-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.portfolio-card {
+   max-width: 540px;
+   margin-bottom: 30px;
+   padding: 20px;
+   background-color: #fff;
+   box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+}
+
+.portfolio-card:last-child, 
+.portfolio-card:nth-last-child(2) {
+   margin-bottom: 0;
+}
+
+.portfolio-card-img {
+   margin-bottom: 20px;
+}
+
+.portfolio-card-title {
+   margin: 0;
+   margin-bottom: 13px;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 130%;   
+   color: #000000;
+}
+
+.portfolio-card p {
+   margin: 0;
+   font-size: 16px;
+   line-height: 130%;
+   color: #000000;
 }
